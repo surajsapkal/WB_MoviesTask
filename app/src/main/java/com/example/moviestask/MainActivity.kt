@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var movieViewModel: MovieViewModel
-    private lateinit var movieRepository: MovieRepository
     private lateinit var movieAdapter: MovieAdapter
 
     private val TAG = "MainActivity"
@@ -29,10 +28,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupRecyclerView()
-        movieRepository = MovieRepository()
         movieViewModel = ViewModelProvider(this)[MovieViewModel::class.java]
         movieViewModel = MovieViewModel()
-        //movieViewModel.getMovies(API_KEY)
         movieViewModel.getMovies(API_KEY)?.observe(this, Observer{
             Log.d(TAG,"Result is: $it")
             movieAdapter.setMovieList(it)
