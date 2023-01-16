@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/onlineMovieFragment"
+        android:title="Online Movies"
+        android:icon="@drawable/ic_online_movies"/>
+
+    <item android:id="@+id/offlineMovieFragment"
+        android:title="Offline Movies"
+        android:icon="@drawable/ic_offline_movies"/>
+
+</menu>

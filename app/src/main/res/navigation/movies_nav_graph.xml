@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movies_nav_graph"
+    app:startDestination="@id/onlineMoviesFragment">
+
+    <fragment
+        android:id="@+id/onlineMoviesFragment"
+        android:label="OnlineMovies"/>
+    <fragment
+        android:id="@+id/offlineMoviesFragment"
+        android:label="OfflineMovies"/>
+
+</navigation>
